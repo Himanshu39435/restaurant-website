@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOIR — Modern Dining</title>
+  <meta name="description" content="NOIR is a fictional luxury restaurant offering modern fine dining, signature dishes and table reservations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="NOIR home">HIMANSHU</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#reservation" class="btn btn-gold">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow reveal">AN EXTRAORDINARY DINING EXPERIENCE</p>
+        <h1 class="reveal">Where Every Bite Becomes a Memory.</h1>
+        <p class="hero-text reveal">Seasonal produce, patient technique and warm hospitality come together for an evening you will want to relive.</p>
+        <div class="hero-actions reveal">
+          <a href="#menu" class="btn btn-gold">Explore Our Menu</a>
+          <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section"><span></span></a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=75" alt="Warmly lit NOIR dining room with set tables" loading="lazy">
+          <div class="badge"><strong>10+</strong><span>Years of Excellence</span></div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">OUR STORY</p>
+          <h2>A Passion for Exceptional Dining.</h2>
+          <p>NOIR began as a small kitchen with a simple belief: great food starts with honest ingredients. Today our chefs work with local farms and trusted suppliers, building menus that follow the seasons.</p>
+          <p>Every plate is prepared by skilled hands and served by a team that treats each guest like family, so a night at NOIR feels both refined and relaxed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">SIGNATURE MENU</p>
+          <h2>Crafted to Be Remembered</h2>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filter menu by category">
+          <button type="button" class="filter active" data-filter="All" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="Starters" aria-pressed="false">Starters</button>
+          <button type="button" class="filter" data-filter="Main Course" aria-pressed="false">Main Course</button>
+          <button type="button" class="filter" data-filter="Desserts" aria-pressed="false">Desserts</button>
+          <button type="button" class="filter" data-filter="Beverages" aria-pressed="false">Beverages</button>
+        </div>
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section chef" id="chef">
+      <div class="container chef-grid">
+        <div class="chef-text reveal">
+          <p class="eyebrow">CHEF'S SPECIAL</p>
+          <h2>Charcoal-Grilled Lamb Rack</h2>
+          <p>Our signature: lamb marinated for 24 hours in smoked spices, grilled over charcoal and finished with saffron jus and roasted shallots.</p>
+          <p class="chef-price">₹2,450</p>
+          <a href="#menu" class="btn btn-gold">Discover the Menu</a>
+        </div>
+        <div class="chef-media reveal">
+          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1000&q=75" alt="Grilled meat plated with sauce and garnish" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">GALLERY</p>
+          <h2>A Glimpse of NOIR</h2>
+        </div>
+        <div class="gallery-grid reveal">
+          <button type="button" class="g-item g-wide" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=70" alt="Elegantly plated fine-dining dish" loading="lazy"></button>
+          <button type="button" class="g-item" data-full="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=70" alt="Restaurant interior with warm lighting" loading="lazy"></button>
+          <button type="button" class="g-item g-tall" data-full="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=70" alt="Seared steak served with vegetables" loading="lazy"></button>
+          <button type="button" class="g-item" data-full="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1400&q=80"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=70" alt="Assorted desserts on a table" loading="lazy"></button>
+          <button type="button" class="g-item" data-full="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1400&q=80"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=70" alt="Guests dining in an elegant restaurant" loading="lazy"></button>
+          <button type="button" class="g-item g-wide" data-full="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=70" alt="Fresh gourmet dish with colourful ingredients" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">WHY NOIR</p>
+          <h2>The NOIR Difference</h2>
+        </div>
+        <div class="features">
+          <article class="feature reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8 8 4 10 4 15a8 8 0 0 0 16 0c0-5-4-7-8-13z"/></svg>
+            <h3>Fresh, Quality Ingredients</h3><p>Sourced daily from trusted local growers and suppliers.</p>
+          </article>
+          <article class="feature reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14a4 4 0 1 1 3-6.6A4 4 0 0 1 18 9a4 4 0 0 1 0 5v6H6z"/></svg>
+            <h3>Expert Chefs</h3><p>Trained in classic technique, driven by modern creativity.</p>
+          </article>
+          <article class="feature reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v6M8 9h8l-1 5H9zM12 14v7M8 21h8"/></svg>
+            <h3>Elegant Ambience</h3><p>Soft lighting and refined interiors made for lingering.</p>
+          </article>
+          <article class="feature reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>
+            <h3>Exceptional Service</h3><p>Attentive, personal hospitality from arrival to farewell.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="reviews">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">REVIEWS</p>
+          <h2>Words from Our Guests</h2>
+        </div>
+        <div class="carousel reveal" aria-roledescription="carousel" aria-label="Customer reviews">
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="track">
+              <figure class="slide">
+                <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>An unforgettable evening. The lamb was perfect and the service felt effortless.</blockquote>
+                <figcaption>— Aarav Mehta</figcaption>
+              </figure>
+              <figure class="slide">
+                <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>Beautiful room, thoughtful menu and a dessert I am still thinking about.</blockquote>
+                <figcaption>— Isha Kapoor</figcaption>
+              </figure>
+              <figure class="slide">
+                <div class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</div>
+                <blockquote>Perfect for our anniversary. Warm staff and wonderfully balanced flavours.</blockquote>
+                <figcaption>— Rohan &amp; Neha Sharma</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="arrow" id="prevBtn" aria-label="Previous review">‹</button>
+            <div class="dots" id="dots"></div>
+            <button type="button" class="arrow" id="nextBtn" aria-label="Next review">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reservation">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">RESERVATIONS</p>
+          <h2>Reserve Your Table</h2>
+          <p class="note">Send us your request and our team will contact you to confirm your table.</p>
+        </div>
+        <form class="form reveal" id="reserveForm" novalidate>
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required pattern="[0-9+\s\-]{8,15}" autocomplete="tel" placeholder="+91 98765 43210"></div>
+          <div class="field"><label for="guests">Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option>
+            </select></div>
+          <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+          <div class="field"><label for="time">Time</label><input id="time" name="time" type="time" min="12:00" max="23:00" required></div>
+          <div class="field full"><label for="requests">Special requests (optional)</label><textarea id="requests" name="requests" rows="3"></textarea></div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <div class="full"><button type="submit" class="btn btn-gold" id="submitBtn">Request Table</button></div>
+          <p class="form-msg full" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+        <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">CONTACT</p>
+          <h2>Visit NOIR</h2>
+          <ul class="info">
+            <li><strong>Address</strong>12 Garden Lane, C-Scheme, Jaipur 302001</li>
+            <li><strong>Hours</strong>Tue–Sun, 12:00 – 23:00 · Closed Monday</li>
+            <li><strong>Phone</strong><a href="tel:+919525206883">+91 9525206883</a></li>
+            <li><strong>Email</strong><a href="mailto:himanshu39435@gmail.com">himanshu39435@gmail.com</a></li>
+            <li><strong>Social</strong><a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="X">X</a></li>
+          </ul>
+          <a href="mailto:himanshu39435@gmail.com" class="btn btn-gold">Contact Us</a>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe
+            title="NOIR location map, C-Scheme, Jaipur"
+            src="https://www.google.com/maps?q=C-Scheme,+Jaipur,+Rajasthan+302001&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=C-Scheme+Jaipur+302001" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a href="#home" class="logo">NOIR</a><p>Modern dining shaped by seasonal ingredients and thoughtful hospitality.</p></div>
+      <div><h3>Quick Links</h3><ul>
+        <li><a href="#about">About</a></li><li><a href="#menu">Menu</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reservation">Reservations</a></li></ul></div>
+      <div><h3>Hours</h3><p>Tue–Sun<br>12:00 – 23:00</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+        </div></div>
+    </div>
+    <p class="copy">© <span id="year"></span> HIMANSHU — Modern Dining.</p>
+  </footer>
+
+  <button type="button" class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button type="button" class="lb-close" id="lbClose" aria-label="Close image">×</button>
+    <img id="lbImg" src="" alt="">
+  </div>
+</body>
+</html>
